@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Disconnect_bt"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Connect"
+        android:text="@string/Disconnect_bt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Port_txt"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/Port_txt"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Port_txt"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/Connect_bt"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IP_txt" />
+
+    <EditText
+        android:id="@+id/IP_txt"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/IP_text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/Connect_bt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Connect_bt"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Connect"
+        android:text="@string/Connect_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/IP_txt"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
